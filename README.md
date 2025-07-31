@@ -1,4 +1,4 @@
-# 🕵️‍♂️ OSINT Toolkit (Frontend-Only, GitHub Pages Compatible)
+# 🕵️‍♂️ OSINT Toolkit
 
 A lightweight, browser-based OSINT (Open Source Intelligence) tool that enables quick information gathering from public sources like GitHub, WHOIS services, and LinkedIn (via DuckDuckGo search queries). This project is built entirely using HTML, Tailwind CSS, and vanilla JavaScript — no backend or server setup required, making it fully compatible with **GitHub Pages** hosting.
 
@@ -39,5 +39,5 @@ A lightweight, browser-based OSINT (Open Source Intelligence) tool that enables 
 
 ## 📸 Screenshots
 
-![OSINT Toolkit UI](./sample.jpg)
+![OSINT Toolkit UI](./sample.png)
 
