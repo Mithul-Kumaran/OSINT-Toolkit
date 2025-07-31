@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OSINT Toolkit</title>
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 p-6">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow">
+    <h1 class="text-2xl font-bold mb-4">OSINT Toolkit</h1>
+
+    <!-- GitHub -->
+    <div class="mb-4">
+      <label class="block font-medium mb-1">GitHub Username</label>
+      <input type="text" id="githubUser" class="w-full border p-2 rounded" placeholder="e.g., torvalds" />
+      <button onclick="fetchGitHub()" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Fetch GitHub Info</button>
+      <pre id="githubResult" class="mt-2 text-sm bg-gray-100 p-2 rounded overflow-x-auto"></pre>
+    </div>
+
+    <!-- WHOIS -->
+    <div class="mb-4">
+      <label class="block font-medium mb-1">Domain (for WHOIS)</label>
+      <input type="text" id="domainInput" class="w-full border p-2 rounded" placeholder="e.g., example.com" />
+      <button onclick="fetchWHOIS()" class="mt-2 bg-green-500 text-white px-4 py-2 rounded">Lookup WHOIS</button>
+      <pre id="whoisResult" class="mt-2 text-sm bg-gray-100 p-2 rounded overflow-x-auto"></pre>
+    </div>
+
+    
+<!-- LinkedIn Search (works on GitHub Pages) -->
+<div class="mb-4">
+  <label class="block font-medium mb-1">Search LinkedIn Profile</label>
+  <input
+    type="text"
+    id="linkedinInput"
+    placeholder="e.g., Elon Musk"
+    class="w-full border p-2 rounded"
+  />
+  <button
+    onclick="searchLinkedInProfile()"
+    class="mt-2 bg-purple-600 text-white px-4 py-2 rounded"
+  >
+    Search on LinkedIn via Google
+  </button>
+</div>
+
+
+  </div>
+</body>
+</html>
